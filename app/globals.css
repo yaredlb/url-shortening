@@ -83,7 +83,7 @@ input {
 .btn-primary {
   background-color: var(--cyan);
   color: white;
-  }
+}
 
 .btn-secondary {
   background-color: white;
@@ -253,7 +253,6 @@ input {
     margin: 20px 0;
   }
 
-
   #nav-visible:not(:checked) ~ .navbar-nav,
   #nav-visible:not(:checked) ~ .actions,
   #nav-visible:not(:checked) ~ .separator-mobile {
@@ -332,11 +331,10 @@ input {
   align-items: center;
   z-index: 1;
 
-  margin:67px auto 0;
+  margin: 67px auto 0;
   padding: 50px;
-  
-  background: var(--dark-violet) url("/bg-shorten-desktop.svg")
-    no-repeat;
+
+  background: var(--dark-violet) url("/bg-shorten-desktop.svg") no-repeat;
   background-size: cover;
   border-radius: 9px;
   width: 80%;
@@ -356,6 +354,75 @@ input {
   padding-top: 22px;
   padding-bottom: 22px;
   border-radius: 9px;
+}
+
+/* Style for the result container */
+.result {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background to distinguish from the rest of the page */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.result h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for better readability */
+}
+
+.result ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.result li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between original and shortened URL */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Divider line between links */
+}
+
+.result li:last-child {
+  border-bottom: none; /* Remove bottom border from the last item */
+}
+
+.original-url {
+  flex: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate long URLs with ellipsis */
+  white-space: nowrap; /* Prevent URL from wrapping to a new line */
+}
+
+.shortened-url a {
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.shortened-url a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.shortened-url button {
+  background-color: #007bff; /* Button color to match primary theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.shortened-url button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+  color: #dc3545; /* Red color for error messages */
+  margin-top: 20px;
 }
 
 @media (max-width: 1439px) {
@@ -410,8 +477,7 @@ input {
   }
 
   .intro .shorten-url-form {
-    background: var(--dark-violet) url("/bg-shorten-mobile.svg")
-      no-repeat;
+    background: var(--dark-violet) url("/bg-shorten-mobile.svg") no-repeat;
     background-position: right top;
     padding: 25px;
     border-radius: 10px;
@@ -428,7 +494,6 @@ input {
     padding: 16px 40px;
   }
 }
-
 
 /* #endregion */
 
@@ -600,8 +665,8 @@ input {
 
 .start-now {
   grid-column: 1/4;
-  background: var(--dark-violet) url("/bg-boost-desktop.svg") 0 0
-    no-repeat scroll;
+  background: var(--dark-violet) url("/bg-boost-desktop.svg") 0 0 no-repeat
+    scroll;
   background-size: cover;
   display: flex;
   flex-direction: column;
