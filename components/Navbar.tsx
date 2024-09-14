@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
     <header className="app-header">
       <nav className="navbar">
-        <a href="/" className="navbar-brand">
+        <Link href="/" className="navbar-brand">
           <Image
             src="/logo.svg"
             alt="Shortly's logo"
@@ -13,7 +14,7 @@ const Navbar = () => {
             height={100}
             className="logo"
           />
-        </a>
+        </Link>
         <input type="checkbox" id="nav-visible" tabIndex={-1} />
         <label htmlFor="nav-visible" className="toggle-nav">
           <svg
