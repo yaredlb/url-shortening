@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Stats = () => {
@@ -112,7 +113,7 @@ const Stats = () => {
           <div className="cards">
             <div className="card">
               <div className="card-icon">
-                <img
+                <Image
                   src="/icon-brand-recognition.svg"
                   alt="Brand Recognition Icon"
                   width={40}
@@ -129,7 +130,7 @@ const Stats = () => {
 
             <div className="card">
               <div className="card-icon">
-                <img
+                <Image
                   src="/icon-detailed-records.svg"
                   alt="Detailed Records Icon"
                   width={40}
@@ -146,7 +147,7 @@ const Stats = () => {
 
             <div className="card">
               <div className="card-icon">
-                <img
+                <Image
                   src="/icon-fully-customizable.svg"
                   alt="Fully Customizable Icon"
                   width={40}

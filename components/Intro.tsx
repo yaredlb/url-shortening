@@ -10,7 +10,7 @@ const Intro: React.FC = () => {
         <div className="title-desc">
           <h1 className="title">More than just shorter links</h1>
           <p className="desc">
-            Build your brand's recognition and gain insights into link
+            Build your brand&apos;s recognition and gain insights into link
             performance.
           </p>
           <button className="btn btn-primary">Get Started</button>
